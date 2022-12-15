@@ -1,0 +1,12 @@
+#notfound {
+    position: relative;
+    background-image: url("../images/pov.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    /* padding: 200px 100px 100px 100px; */
+  }
+
+  #notfound .page-text {
+    font-size: 6rem;
+  }

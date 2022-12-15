@@ -1,6 +1,11 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import Home from "../../pages/Home";
 import "./App.css";
+
+import Header from "../Nav/Header";
+import Home from "../../pages/Home";
+import Login from "../../pages/Login";
+import NotFound from "../../pages/NotFound";
 
 function App() {
   return (
@@ -8,9 +13,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

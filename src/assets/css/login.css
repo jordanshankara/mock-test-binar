@@ -1,0 +1,47 @@
+
+#log-container {
+  height: 100vh;
+  padding: 50px 10%;
+  background-image: url('../images/pov.jpg');
+  background-size: cover;
+}
+
+#log-box1 {
+  width: 600px;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.log-h1 {
+  font-size: 32px !important;
+  margin-bottom: 20px !important ;
+}
+
+input:valid,
+input:focus {
+  border-style: none;
+  background-color: #c9c9c9;
+}
+
+.log-h2,
+.log-h1,
+label {
+  text-transform: capitalize;
+  color: #c9c9c9;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  #log-box1 {
+    width: 400px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #log-box1 {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
